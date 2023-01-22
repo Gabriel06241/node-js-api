@@ -1,0 +1,19 @@
+@host=http://localhost:3001
+
+###
+GET {{host}}/healthcheck
+
+###
+GET {{host}}/api/notes
+
+###
+GET {{host}}/api/notes/1
+
+###
+DELETE {{host}}/api/notes/1
+
+###
+POST {{host}}/api/notes
+Content-Type: application/json
+
+{ "content": "testName" }
